@@ -128,19 +128,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large language models demonstrate remarkable flexibility in generalizing representations 
-		  learned in a single modality to downstream tasks in modalities unseen during training. We study
-		  the case where a single linear projection layer converts unsupervised visual representations 
-		  directly into soft prompts for a frozen language model. We show that these “image prompts” are 
-		  not themselves decodable into language, but propagate image content to multimodal neurons in 
-		  deeper layers of the transformer that convert visual representations into corresponding text
-		  representations. We introduce a procedure for identifying multimodal neurons in transformer 
-		  MLPs based on their contribution to a crossmodal task, and decoding the concepts they inject 
-		  into the model's residual stream. Our finding of multimodal neurons in this setting suggests that 
-		  their emergence does not depend on joint visual and language supervision, since they emerge 
-		  in a network pretrained only on text. Further, we find that the visual specificity of the language 
-		  model neurons is robust to different inputs, and they have a systematic causal effect on model 
-		  caption generation.
+Language models demonstrate remarkable capacity to generalize representations learned in one modality to downstream tasks in other modalities. 
+		  Can we trace this ability to individual neurons? We study the case where a frozen text transformer is augmented with vision using a 
+		  self-supervised visual encoder and a single linear adapter layer learned on an image-to-text task. Outputs of the adapter are not 
+		  immediately decodable into language describing image content; instead, we find that translation between modalities occurs deeper 
+		  within the transformer. We introduce a procedure for identifying "multimodal neurons" that convert visual representations into
+		  corresponding text, and decoding the concepts they inject into the model’s residual stream. In a series of experiments, we show
+		  that multimodal neurons operate on specific visual concepts across inputs, and have a systematic causal effect on image captioning.
           </p>
         </div>
       </div>
