@@ -114,7 +114,7 @@
 <section class="section" style="margin-top: -20px;">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-	    <p>For example, <b>MLP unit 9058</b> in <b>Layer 12</b> of GPT-J injects language related to <em>swimming, swim, fishes, water, Aqua</em> into the model's next token prediction, and is maximally active on image regions containing water, across a diversity of visual scenes.</h3>
+	    <p>For example, <b>MLP unit 9058</b> in <b>Layer 12</b> of GPT-J injects language related to <em>swimming, swim, fishes, water, Aqua</em> into the model's next token prediction, and is maximally active on images and regions containing water, across a diversity of visual scenes.</h3>
     </div>
 	<br>
     <div class="columns is-centered">
@@ -146,24 +146,6 @@ Language models demonstrate remarkable capacity to generalize representations le
   </div>
 </section>
 
-	
-	
-<section class="section" style="margin-top: -5px;">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-	<h3 class="title is-4">Example top-scoring multimodal neurons for images in MS COCO:</h3>
-    </div>
-   </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-        <img source src="./static/figures/main_decoding_heatmap.png" />
-    </div>
-  </div>
-</section>
-	
 <section class="section" style="margin-top: -5px;">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -177,12 +159,42 @@ Language models demonstrate remarkable capacity to generalize representations le
         <img source src="./static/figures/example_units.png" />
     </div>
   </div>
+	
+<section class="section" style="margin-top: -5px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+	<h3 class="title is-4" style="text-align: left;">How are multimodal neurons detected?</h3>
+    </div>
+   </div>
+</section>
+
+<section class="section" style="margin-top: -20px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+	    <p>We use a procedure based on gradients to evaluate the contribution of individual units inside transformer MLPs to an image captioning task. </h3>
+    </div>
+	<br>
+    <div class="columns is-centered">
+        <img source src="./static/figures/L12_u9058.png" />
+    </div>
+   </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img source src="./static/figures/main_decoding_heatmap.png" />
+    </div>
+  </div>
+</section>
+	
+
 </section>
 
 <footer class="footer">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content" style="text-align: center;">
           <p>
             This website is adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>, which you are free to borrow if you link back to it in the footer.
           </p>
