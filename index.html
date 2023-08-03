@@ -162,9 +162,9 @@ Language models demonstrate remarkable capacity to generalize representations le
 
 <section class="section" style="margin-top: -5px;">
     <div class="container is-max-desktop">
-        <div style="text-align: left;">
+        <div style="padding: 20px; text-align: left;">
             <h3 class="title is-4">How do we detect multimodal neurons: units that convert image semantics into related text?</h3>
-            <ul style="list-style-type: disc;">
+            <ul style="list-style-type: disc; padding-left: 0;">
                 <li>Score each unit’s contribution to an image captioning task by linearly approximating its effect on model output.</li>
                 <li>Decode that text using the transformer unembeddings.</li>
             </ul>
@@ -178,7 +178,7 @@ Language models demonstrate remarkable capacity to generalize representations le
     <div class="hero-body">
         <figure>
             <img src="./static/figures/main_decoding_heatmap.png" />
-            <figcaption> Top five multimodal neurons (layer L, unit u), for 12 sample images. Superimposed heatmaps (0.95
+            <figcaption style="font-size: 0.8em;"> Top five multimodal neurons (layer L, unit u), for 12 sample images. Superimposed heatmaps (0.95
 percentile of activations) show mean activations of the top five neurons over the image. The two highest-probability decoded tokens are shown for each neuron</figcaption>
         </figure>
     </div>
