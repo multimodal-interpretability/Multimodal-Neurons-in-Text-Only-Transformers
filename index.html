@@ -160,13 +160,18 @@ Language models demonstrate remarkable capacity to generalize representations le
     </div>
   </div>
 
-<section class="section" style="margin-top: -20px;">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-	    <p>How do we detect multimodal neurons: units that convert image semantics into related text?</h3>
+<section class="section" style="margin-top: -5px;">
+    <div class="container is-max-desktop">
+        <div style="text-align: left;">
+            <h3 class="title is-4">How do we detect multimodal neurons: units that convert image semantics into related text?</h3>
+            <ul>
+                <li>Score each unit’s contribution to an image captioning task by linearly approximating its effect on model output.</li>
+                <li>Decode that text using the transformer unembeddings.</li>
+            </ul>
+        </div>
     </div>
-   </div>
 </section>
+
 	
 <section class="hero teaser">
   <div class="container is-max-desktop">
